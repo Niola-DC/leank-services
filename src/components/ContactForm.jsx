@@ -22,7 +22,7 @@ const ContactSection = () => {
   };
 
   return (
-    <section className="bg-gray-50 py-16 px-4 sm:px-6 lg:px-8">
+    <section className=" py-6 lg:py-16 px-4 sm:px-6 lg:px-8">
       <div className="max-w-7xl mx-auto">
         {/* Header */}
         <div className="text-center mb-12">
@@ -98,10 +98,10 @@ const ContactSection = () => {
 
           </div>
 
-          
+
 
           {/* Contact Form */}
-          <div>
+          <div className=''>
 
             <div className="flex flex-col sm:flex-row gap-4 py-4">
               <button className="bg-blue-900 hover:bg-blue-800 text-white font-semibold px-6 py-3 rounded-lg transition-colors duration-200">
@@ -117,7 +117,7 @@ const ContactSection = () => {
                   }}>About Us</Link>
               </button>
             </div>
-            <div className="bg-white p-8 rounded-xl shadow-lg">
+            <div className="p-8 rounded-xl shadow-lg bg-gray-50 px-10 py-4">
 
               <div className="space-y-6">
                 <div>
