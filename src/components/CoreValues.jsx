@@ -17,7 +17,7 @@ const CoreValues = () => {
   ];
 
   return (
-    <section className="py-16 bg-white">
+    <section className="py-8 mt-2 bg-white">
       <div className="container mx-auto px-4 max-w-6xl">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Left Content */}

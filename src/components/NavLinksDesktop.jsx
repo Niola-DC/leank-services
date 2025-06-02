@@ -17,6 +17,8 @@ export default function NavLinksDesktop() {
     { href: "home", text: "Home" },
     { href: "about", text: "About Us" },
     { href: "contact", text: "Contact Us" },
+    { href: "services", text: "Our Services" },
+
   ];
 
   return (
@@ -78,7 +80,7 @@ export default function NavLinksDesktop() {
                     }
                   );
 
-                  return link.href === "contact" || link.href === "about-us"? (
+                  return link.href === "contact" || link.href === "about"? (
           <Link
             // onClick={setCurrentPage.bind(null, link.href)}
             className={linkClass}

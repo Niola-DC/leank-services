@@ -20,10 +20,10 @@ const HeroLayout = ({ title, subtitle, children, backgroundImage }) => {
       {/* Hero Content */}
       <div className="relative flex flex-col items-center min-h-screen px-4 sm:px-6 lg:px-8 pt-16">
         <div className="text-center mb-12 sm:mb-16">
-          <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-white mb-4 sm:mb-6">
+          <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold text-white mb-4 sm:mb-6">
             {title}
           </h1>
-          <p className="text-lg sm:text-xl md:text-2xl text-gray-200 max-w-4xl mx-auto px-4">
+          <p className="text-sm md:text-lg text-gray-200 max-w-4xl mx-auto px-4 mt-4 lg:mt-0">
             {subtitle}
           </p>
         </div>

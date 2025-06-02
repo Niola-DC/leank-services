@@ -22,9 +22,17 @@ const IndustryExperienceSection = () => {
               With years of experience in the logistics industry our team possess deep knowledge
               and insights into global trade regulations and market trends.
             </p>
+              <Link to='/contact'
+              onClick={() => {
+                  window.scrollTo(0, 0);
+                }}>
+
+            
             <button className="bg-blue-900 hover:bg-blue-800 text-white font-semibold px-8 py-3 rounded-lg transition-colors duration-200">
               CONTACT US
             </button>
+              </Link>
+
           </div>
 
           {/* Image */}
@@ -46,7 +54,7 @@ const IndustryExperienceSection = () => {
         <CallToAct title="The fastest way for " title2="you to ship out" para="
                 Leanks is here to make shipping easier and more efficient for everyone">
           <button className="bg-blue-500 hover:bg-blue-600 text-white font-semibold px-8 py-3 rounded-lg transition-colors duration-200">
-            <Link to='/contact'>CONTACT US</Link>
+            <Link to='/contact-form'>CONTACT US</Link>
           </button>
           <button className="bg-transparent border-2 border-white hover:bg-white hover:text-blue-900 text-white font-semibold px-8 py-3 rounded-lg transition-colors duration-200">
             <Link to='/services'>Learn More</Link>

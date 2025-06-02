@@ -14,7 +14,7 @@ export default function Header() {
 
   return (
     <React.Fragment>
-      <header className="sticky top-0 left-0 z-10 w-full bg-primary px-14 py-8 lg:py-0 lg:pb-6">
+      <header className="sticky top-0 left-0 z-10 w-full bg-primary px-14 py-0 lg:pb-6">
         <Container>
           <div className="flex items-center justify-between">
             {/* <Logo /> */}

@@ -1,12 +1,15 @@
+import CallToAct from "../components/CallToAct";
+import CoreValues from "../components/CoreValues";
 import HeroLayout from "../components/HeroLayout";
 
 const AboutPage = () => {
   return (
+    <section className="w-full">
     <HeroLayout
       title="About Us" 
       subtitle="Redefining Logistics & Supply Chain Globally."
     >
-      <div className="bg-white bg-opacity-95 backdrop-blur-sm rounded-2xl shadow-2xl overflow-hidden">
+      <div className="bg-white bg-opacity-95 backdrop-blur-sm rounded-2xl shadow-2xl overflow-hidden max-w-3xl mb-4">
         <div className="p-6 sm:p-8 md:p-12">
           <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center">
             <div className="relative">
@@ -39,16 +42,16 @@ const AboutPage = () => {
               </div>
             </div>
             
-            <div className="space-y-6">
+            <div className="space-y-6 max-w-2xl">
               <div>
                 <span className="text-2xl sm:text-3xl font-bold text-blue-600">LEANKS</span>
-                <span className="text-lg sm:text-xl text-gray-700 ml-2">
+                <span className="text-sm text-gray-700 ml-2">
                   is an integrated Shipping Logistics and Supply Chain Management Company, specializing in end-to-end cargo operations, seamlessly connecting shipper to buyer and a trusted marine safety chandler supplying vessels with certified safety equipments and essential marine provisions. Operating with advanced supply chain visibility.
                 </span>
               </div>
               
               <div className="grid sm:grid-cols-2 gap-6 mt-8">
-                <div className="bg-gradient-to-br from-blue-50 to-blue-100 p-6 rounded-xl">
+                {/* <div className="bg-gradient-to-br from-blue-50 to-blue-100 p-6 rounded-xl">
                   <div className="w-12 h-12 bg-blue-600 rounded-full flex items-center justify-center mb-4">
                     <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9v-9m0-9v9m0 9c-5 0-9-4-9-9s4-9 9-9" />
@@ -56,9 +59,9 @@ const AboutPage = () => {
                   </div>
                   <h4 className="font-bold text-gray-800 mb-2">Global Reach</h4>
                   <p className="text-gray-600 text-sm">Connecting markets worldwide with efficient logistics solutions.</p>
-                </div>
+                </div> */}
                 
-                <div className="bg-gradient-to-br from-indigo-50 to-indigo-100 p-6 rounded-xl">
+                {/* <div className="bg-gradient-to-br from-indigo-50 to-indigo-100 p-6 rounded-xl">
                   <div className="w-12 h-12 bg-indigo-600 rounded-full flex items-center justify-center mb-4">
                     <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.031 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
@@ -66,13 +69,21 @@ const AboutPage = () => {
                   </div>
                   <h4 className="font-bold text-gray-800 mb-2">Safety First</h4>
                   <p className="text-gray-600 text-sm">Certified marine safety equipment and provisions for all vessels.</p>
-                </div>
+                </div> */}
               </div>
             </div>
           </div>
         </div>
       </div>
     </HeroLayout>
+    <div className="max-w-5xl mx-auto py-6 mt-4">
+    <CoreValues />
+      <CallToAct title=" Driving Tomorrow's" title2=" Logistics Today" para="
+                    Leanks is here to make shipping easier and more efficient for everyone" btn1="OUR SERVICES" btn2="ABOUT US" />
+    </div>
+    </section>
+
+
   );
 };
 

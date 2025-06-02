@@ -2,7 +2,7 @@ import React from 'react'
 
 const Services = () => {
   return (
-    <div id='services'>
+    <div id="services">
        <section className="relative bg-blue-900 py-16 sm:py-20 lg:py-24 overflow-hidden">
         {/* Top curved border */}
         <div className="absolute top-0 left-0 w-full overflow-hidden leading-none">
