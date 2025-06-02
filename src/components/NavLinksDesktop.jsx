@@ -28,17 +28,17 @@ export default function NavLinksDesktop() {
             {/* <div className="flex"> */}
 
             {/* Logo */}
-            <div className="flex-shrink-0 px-2 pd-0">
-              <img src="/icon.png" className="w-35" />
+            {/* <div className="flex-shrink-0 px-2 pd-0"> */}
+              {/* <img src="/icon.png" className="w-35" /> */}
 
-            </div>
+            {/* </div> */}
             {/* </div> */}
           </div>
+          <img src="/icon.png" alt="" className="size-20 gap" />
         </div>
         {/* Contact Info */}
-        <FlexBox className="ml-36 pb-8">
-
-          <div className="flex flex-row justify-end items-end mx-20 gap-20 px-20 pb-4">
+        <FlexBox className="ml-40 pt-6 pb-2" gap="medium">
+          <div className="flex flex-row justify-end items-end mx-20 gap-20 px-20 pt-2">
             <div className="flex items-center text-sm">
               <Phone className="w-4 h-4 mr-2 text-cyan-400" />
               <div>
@@ -47,7 +47,7 @@ export default function NavLinksDesktop() {
               </div>
             </div>
 
-            <div className="flex items-center text-sm">
+            <div className="flex items-center text-sm ml-18">
               <Mail className="w-4 h-4 mr-2 text-cyan-400" />
               <div>
                 <span className="text-white font-medium">leanks@gmail.com</span>
