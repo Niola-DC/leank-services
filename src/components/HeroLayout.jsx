@@ -2,7 +2,7 @@ import React from "react";
 
 const HeroLayout = ({ title, subtitle, children, backgroundImage }) => {
   return (
-     <div className="relative min-h-screen flex items-center justify-center overflow-hidden pt-8 lg:pt-0">
+     <div className="relative min-h-screen flex items-center justify-center overflow-hidden pt-8 lg:pt-0 px-3">
         {/* Background Image with Overlay */}
         <div 
           className="absolute inset-0 bg-cover bg-center bg-no-repeat h-[440px]"

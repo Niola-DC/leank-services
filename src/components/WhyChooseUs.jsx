@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 
 const WhyChooseUs = () => {
   const [activeTab, setActiveTab] = useState(0);
@@ -48,7 +49,7 @@ const WhyChooseUs = () => {
 
   return (
     <section className="relative py-16 sm:py-20 lg:py-24 bg-gray-50 overflow-hidden">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="max-w-7xl mx-auto px-12 lg:px-8">
         {/* Section Header */}
         <div className="text-center mb-12 sm:mb-16">
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 mb-8 sm:mb-12">
@@ -56,7 +57,7 @@ const WhyChooseUs = () => {
           </h2>
           
           {/* Tab Navigation */}
-          <div className="flex flex-col sm:flex-row items-center justify-center space-y-4 sm:space-y-0 sm:space-x-8 lg:space-x-16">
+          <div className="flex flex-row items-center justify-center space-y-4 space-x-14 sm:space-x-8 lg:space-x-16">
             {tabData.map((tab, index) => (
               <React.Fragment key={tab.id}>
                 <div 
@@ -173,7 +174,8 @@ const WhyChooseUs = () => {
               </div>
               
               <button className="inline-flex items-center px-8 py-3 bg-blue-900 text-white font-semibold rounded-full hover:bg-blue-800 transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl">
-                READ MORE
+               <Link to='/about'> READ MORE </Link>
+
               </button>
             </div>
           </div>

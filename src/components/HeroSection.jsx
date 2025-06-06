@@ -44,7 +44,7 @@ const HeroSection = () => {
             </div>
 
             {/* Optional: Stats or Features */}
-            <div className="mt-16 sm:mt-20 grid grid-cols-1 sm:grid-cols-3 gap-8 sm:gap-12">
+            <div className="mt-16 sm:mt-20 grid grid-cols-1 sm:grid-cols-3 gap-8 sm:gap-12 mb-4 lg:mb-1">
               <div className="text-center">
                 <div className="text-3xl sm:text-4xl font-bold text-cyan-400 mb-2">500+</div>
                 <div className="text-gray-300 text-sm sm:text-base">Deliveries Daily</div>

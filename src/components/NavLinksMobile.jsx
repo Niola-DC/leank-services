@@ -15,7 +15,7 @@ export default function NavLinksMobile() {
     { href: "home", text: "Home" },
     { href: "about", text: "About Us" },
     { href: "contact", text: "Contact Us" },
-    { href: "services", text: "Our Services" },
+    // { href: "services", text: "Our Services" },
   ];
 
 
@@ -55,11 +55,12 @@ export default function NavLinksMobile() {
         <ul className="py-10 grid gap-3 text-center capitalize *:px-3 *:py-4">
           {NAV_LINKS.map((link) => (
             <li key={link.href} className="text-white text-left">
-              {link.href === "contact" || link.href === "about" ? (
+              {link.href === "contact" || link.href === "about" ?(
               <Link
                 to={`/${link.href}`}
                 onClick={() => {
                   closeMenu();
+
                   window.scrollTo(0, 0);
                 }}
               >

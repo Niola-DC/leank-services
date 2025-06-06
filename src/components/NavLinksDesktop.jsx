@@ -17,7 +17,7 @@ export default function NavLinksDesktop() {
     { href: "home", text: "Home" },
     { href: "about", text: "About Us" },
     { href: "contact", text: "Contact Us" },
-    { href: "services", text: "Our Services" },
+    // { href: "services", text: "Our Services" },
 
   ];
 
@@ -93,6 +93,7 @@ export default function NavLinksDesktop() {
           >
             {link.text}
           </Link>
+          
         ) : isHomePage ? (
           <AnchorLink
             // className={linkClass}
