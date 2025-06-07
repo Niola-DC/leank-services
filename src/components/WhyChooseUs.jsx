@@ -11,7 +11,7 @@ const WhyChooseUs = () => {
       subtitle: "Experience",
       // image: "/images/operators.png",
 
-      image: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+      image: "/images/trucker.jpg",
       content: "With years of experience in the logistics industry our team possess deep knowledge and insights into global trade regulations and market trends.",
       features: [
         "15+ Years of Industry Experience",
@@ -35,7 +35,7 @@ const WhyChooseUs = () => {
       id: 2,
       title: "Customer Centric Approach",
       subtitle: "Approach",
-      image: "https://images.unsplash.com/photo-1600880292203-757bb62b4baf?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+      image: "/images/cotruckers.jpg",
       content: "We prioritize your unique needs with personalized service, 24/7 support, and tailored logistics solutions that grow with your business.",
       features: [
         "24/7 Customer Support",

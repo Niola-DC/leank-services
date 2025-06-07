@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Mail, Phone, MapPin, Grid, Facebook, Twitter, Instagram, Linkedin } from 'lucide-react';
-import { Link } from 'react-router-dom';
 import AnchorLink from 'react-anchor-link-smooth-scroll';
+import { Link } from 'react-router-dom';
 
 const ContactSection = () => {
   const [formData, setFormData] = useState({
@@ -105,14 +105,14 @@ const ContactSection = () => {
 
             <div className="flex flex-col sm:flex-row gap-4 py-4">
               <button className="bg-blue-900 hover:bg-blue-800 text-white font-semibold px-6 py-3 rounded-lg transition-colors duration-200">
-                {/* <Link to='/services'
+                <Link to='/#services'
                 
                   onClick={() => {
                     // window.scrollTo(0, 0);
                     
-                  }}>  */}
+                  }}> 
                   Our Services
-                  {/* </Link> */}
+                  </Link>
               </button>
               <button className="bg-transparent border-2 border-gray-300 hover:border-gray-400 text-gray-700 font-semibold px-6 py-3 rounded-lg transition-colors duration-200">
                 <Link to='/about'

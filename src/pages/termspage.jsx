@@ -1,102 +1,117 @@
-import React from 'react';
-import Heading from '../components/core/Headings';
+import React, { useRef } from 'react';
+import HeroLayout from '../components/HeroLayout';
+import { ChevronDownIcon } from 'lucide-react';
+import PageLayout from '../components/PageLayout';
 
 const TermsPage = () => {
+      const bottomRef = useRef(null);
+    
+      const scrollToBottom = () => {
+        bottomRef.current?.scrollIntoView({ behavior: 'smooth' });
+      };
     return (
-        <div className="w-full max-w-7xl mx-auto px-4 py-1 md:py-16 md:w-full">
-            <div className="bg-white p-4 sm:p-8 rounded-lg max-w-4xl mx-auto w-full md:w-3/4">
-                <Heading variant="head" className=" text-2xl sm:text-3xl md:text-4xl">
+
+        <section className="w-full max-w-7xl mx-auto md:w-full relative">
+            <PageLayout >
+                <div className='h-[400px]'>
+                    <h1 className="text-white text-center text-3xl lg:text-5xl font-semibold  md:text-4xl mb-4">
                     Terms & Conditions
-                </Heading>
-            
-                <h2 className="text-3xl sm:text-3xl md:text-4xl font-bold text-purple-800 mb-4 sm:mb-6 text-left mx-14">
-                    PaySkul's Term of Use
+                </h1>
+
+                <h2 className="text-2xl lg:text-3xl md:text-4xl font-bold text-white mb-4 sm:mb-6 text-center mx-14">
+                    Leanks Innovation Service's Term of Use
                 </h2>
-                <p className="my-4 text-left text-base sm:text-lg text-gray-600 max-w-3xl mx-auto leading-relaxed sm:mx-10">
-                    Your privacy is our top priority at PaySkul. We respect your privacy regarding any information we may collect from you across our website.
-                </p>
-            </div>
+                </div>
+            </PageLayout>
 
 
 
-            <div className="bg-white p-8 rounded-lg shadow-md max-w-4xl mx-auto">
+            <div className="bg-white p-8 rounded-lg shadow-md max-w-5xl mx-auto">
+                         <p className="mb-4 text-left text-base sm:text-lg text-black max-w-3xl mx-auto leading-relaxed sm:mx-10">
+                    These Terms and Conditions  govern your use of the services provided by Leanks Innovation Services including freight forwarding, logistics management, and marine supply services.
 
-                <p className="text-gray-700">
-                    PaySkul ltd As the data collector, ("we" "us" "our") are committed to protecting and respecting your privacy. This policy sets out the basis on which any personal data we collect from you, or that you provide to us, will be processed by us.
                 </p>
 
                 <p className="text-gray-700">
-                    Please read the following carefully to understand our views and practices regarding your personal data and how we will treat it. By visiting payskul.com or using PaySkul mobile application hosted on the Google Play Store or Apple Play Store (collectively "our site") you are accepting and consenting to the practices described in this policy.
+                    By engaging our services, you agree to be bound by these Terms.
                 </p>
 
                 <div className="space-y-4 mt-4">
-                    <h3 className="text-xl font-semibold text-gray-800">What information do we collect?</h3>
+                    <h3 className="text-xl font-semibold text-gray-800">Services</h3>
                     <p className="text-gray-700">
-                        We may collect and process the following data about you:
+                        We provide freight forwarding, customs brokerage, warehousing, marine supplies, ship chandling, cargo haulage and other related logistics services. The scope, duration, and cost of services will be as per individual contracts or quotations.
+                    </p>
+                    <h3 className="text-xl font-semibold text-gray-800"> Quotes and Pricing
+                    </h3>
+                    <p className="text-gray-700">
+                        Quotes are valid for 14 days unless otherwise stated. Pricing is subject to change based on fuel surcharges, port fees, and customs regulations. Final charges may vary depending on actual shipment weight, volume, and conditions.
+                    </p>
+                    <h3 className="text-xl font-semibold text-gray-800">  Booking and Cancellations
+                    </h3>
+                    <p className="text-gray-700">
+                        All service bookings must be confirmed in writing. Cancellations made less than 48 hours of the scheduled service may incur a cancellation fee.
+                    </p>
+
+                </div>
+
+                <div className="space-y-4 mt-4">
+                    <h3 className="text-xl font-semibold text-gray-800">Liabilities and Limitations
+</h3>
+                    <p className="text-gray-700">
+                        We are not liable for:
                     </p>
                     <ul className="list-disc pl-6 space-y-2 text-gray-700">
-                        <li>Information you provide by filling in forms on our site</li>
-                        <li>Information provided at the time of registering to use our site, subscribing to our service, posting material or requesting further services</li>
-                        <li>Details of transactions you carry out through our site and of the fulfillment of your orders</li>
-                        <li>Details of your visits to our site including, but not limited to, traffic data, location data, and other communication data</li>
+                        <li>
+                            Delays caused by customs, weather, or port authority issues.
+
+                        </li>
+                        <li>
+                            Loss, damage, or theft once cargo is out of our custody and control unless due to our proven negligence.
+
+                        </li>
+                        <li>
+                            Any indirect, incidental, or consequential damages
+                        </li>
+                        <li>
+                            For freight forwarding, liability is limited as per the applicable conventions (e.g., Hague-Visby Rules, CMR Convention, or local governing regulations).
+
+                        </li>
                     </ul>
                 </div>
 
                 <div className="space-y-4 mt-4">
-                    <h3 className="text-xl font-semibold text-gray-800">How we use your information</h3>
+                    <h3 className="text-xl font-semibold text-gray-800">Insurance</h3>
                     <p className="text-gray-700">
-                        We use information held about you in the following ways:
-                    </p>
-                    <ul className="list-disc pl-6 space-y-2 text-gray-700">
-                        <li>To provide you with information, products or services that you request from us</li>
-                        <li>To carry out our obligations arising from any contracts entered into between you and us</li>
-                        <li>To notify you about changes to our service</li>
-                        <li>To ensure that content from our site is presented in the most effective manner for you</li>
-                    </ul>
-                </div>
+                       Insurance is not included unless specifically requested in writing and confirmed by us. Customers are advised to arrange adequate insurance coverage.
 
-                <div className="space-y-4 mt-4">
-                    <h3 className="text-xl font-semibold text-gray-800">Data Security</h3>
-                    <p className="text-gray-700">
-                        We have implemented appropriate security measures to prevent your personal data from being accidentally lost, used or accessed in an unauthorized way, altered or disclosed. In addition, we limit access to your personal data to those employees, agents, contractors and other third parties who have a business need to know.
                     </p>
                 </div>
 
                 <div className="space-y-4 mt-4">
-                    <h3 className="text-xl font-semibold text-gray-800">Your Rights</h3>
+                    <h3 className="text-xl font-semibold text-gray-800">Compliance</h3>
                     <p className="text-gray-700">
-                        You have rights under data protection laws in relation to your personal data, including:
+                        Clients are responsible for providing accurate documentation and complying with all applicable import/export regulations. The Company reserves the right to refuse service for any cargo suspected to be illegal, hazardous, or misdeclared.
+
                     </p>
-                    <ul className="list-disc pl-6 space-y-2 text-gray-700">
-                        <li>Request access to your personal data</li>
-                        <li>Request correction of your personal data</li>
-                        <li>Request erasure of your personal data</li>
-                        <li>Object to processing of your personal data</li>
-                        <li>Request restriction of processing your personal data</li>
-                        <li>Request transfer of your personal data</li>
-                        <li>Right to withdraw consent</li>
-                    </ul>
+                     <h3 className="text-xl font-semibold text-gray-800">Payment Terms</h3>
+                    <p className="text-gray-700">
+                        Unless otherwise agreed in writing, payment is due within [14] days from invoice date. Late payments may incur interest and collection fees.
+                    </p>
+                    
                 </div>
 
-                <div className="space-y-4 mt-4">
-                    <h3 className="text-xl font-semibold text-gray-800">Changes to this Privacy Policy</h3>
-                    <p className="text-gray-700">
-                        We may update this privacy policy from time to time. We will notify you of any changes by posting the new privacy policy on this page. You are advised to review this privacy policy periodically for any changes.
-                    </p>
-                </div>
-
-                <div className="space-y-4 mt-4">
-                    <h3 className="text-xl font-semibold text-gray-800">Contact Us</h3>
-                    <p className="text-gray-700">
-                        If you have any questions about this privacy policy, please contact us at:
-                    </p>
-                    <p className="text-gray-700">
-                        Email: privacy@payskul.com<br />
-                        Phone: +234 916 070 8325
-                    </p>
-                </div>
+                
             </div>
-        </div>
+            <button
+        onClick={scrollToBottom}
+        className="fixed bottom-6 right-6 bg-blue-700 text-white p-4 rounded-full shadow-lg hover:bg-blue-900 transition duration-300">
+        {/* <FaArrowDown size={24} /> */}
+        <ChevronDownIcon fontSize={24} width={24} />
+      </button>
+
+      {/* Bottom Reference */}
+      <div ref={bottomRef} className="mt-10"></div>
+        </section>
     );
 };
 

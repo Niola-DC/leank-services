@@ -1,3 +1,4 @@
+import { title } from 'framer-motion/client'
 import React from 'react'
 
 const Services = () => {
@@ -51,7 +52,7 @@ const Services = () => {
         </div>
 
         <div className="relative max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 mt-6">
-  <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-10">
+  <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-10">
     {[
       {
         title: "Haulage Operations",
@@ -68,6 +69,14 @@ const Services = () => {
       {
         title: "Marine Safety (Chandler Services)",
         description: "Providing high quality, reliable marine and safety equipments that ensures the protection of life, property and the marine environment."
+      },
+      {
+        title: "Shipment Diversity",
+        description: "Shipping to Agro-commodities supplies not limited to Chemicals, Wood Substance, Machinery, including Personal Effects, Minerals Resources, FMCG"
+      },
+      {
+        title: "Risk and Compliance Management ",
+        description: "We help navigate complex trade regulations and mitigate risks such as delays, penalties or loss due to non compliance."
       }
     ].map((service, index) => (
       <div key={index} className="text-center lg:text-left">

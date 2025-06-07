@@ -4,6 +4,7 @@ import WhyChooseUs from '../components/WhyChooseUs'
 import Services from '../components/Services'
 import CoreValues from '../components/CoreValues'
 import ContactSection from '../components/ContactSection'
+import CallToAct from '../components/CallToAct'
 
 const HomePage = () => {
   return (
@@ -14,6 +15,7 @@ const HomePage = () => {
       <Services />
       <CoreValues />
       <ContactSection />
+
     </div>
   )
 }

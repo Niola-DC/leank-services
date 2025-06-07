@@ -27,14 +27,7 @@ export default function NavLinksDesktop() {
       <header className="border border-[#1a1b3a] border-b-blue-300 mb-3 flex flex-row gap-16" >
         <div className="border-b border-indigo-700/30 px-10">
           <div className=" mx-auto px-2 ">
-            {/* <div className="flex"> */}
-
-            {/* Logo */}
-            {/* <div className="flex-shrink-0 px-2 pd-0"> */}
-              {/* <img src="/icon.png" className="w-35" /> */}
-
-            {/* </div> */}
-            {/* </div> */}
+           
           </div>
           <img src="/icon.png" alt="" className="size-20 gap" />
         </div>
@@ -80,47 +73,47 @@ export default function NavLinksDesktop() {
                     }
                   );
 
-                  return link.href === "contact" || link.href === "about"? (
-          <Link
-            // onClick={setCurrentPage.bind(null, link.href)}
-            className={linkClass}
-            key={link.href}
-            to={`/${link.href}`}
-            onClick={() => {
-              setCurrentPage.bind(null, link.href);
-              window.scrollTo(0, 0);
-            }}
-          >
-            {link.text}
-          </Link>
-          
-        ) : isHomePage ? (
-          <AnchorLink
-            // className={linkClass}
-            className={linkClass}
-            key={link.href}
-            href={`#${link.href}`}
-            offset={100}
-            onClick={setCurrentPage.bind(null, link.href)}
-          >
-            {link.text}
-          </AnchorLink>
-        ) : (
-          <Link
-            // onClick={setCurrentPage.bind(null, link.href)}
-            className={linkClass}
-            onClick={() => {
-              setCurrentPage.bind(null, link.href);
-              window.scrollTo(0, 0);
-            }}
-            key={link.href}
-            to={`/#${link.href}`}
+                  return link.href === "contact" || link.href === "about"  ?(
+                    <Link
+                      // onClick={setCurrentPage.bind(null, link.href)}
+                      className={linkClass}
+                      key={link.href}
+                      to={`/${link.href}`}
+                      onClick={() => {
+                        setCurrentPage.bind(null, link.href);
+                        window.scrollTo(0, 0);
+                      }}
+                    >
+                      {link.text}
+                    </Link>
 
-          >
-            {link.text}
-          </Link>
-        );
-      })}
+                  ) : isHomePage ? (
+                    <AnchorLink
+                      // className={linkClass}
+                      className={linkClass}
+                      key={link.href}
+                      href={`#${link.href}`}
+                      offset={100}
+                      onClick={setCurrentPage.bind(null, link.href)}
+                    >
+                      {link.text}
+                    </AnchorLink>
+                  ) : (
+                    <Link
+                      // onClick={setCurrentPage.bind(null, link.href)}
+                      className={linkClass}
+                      onClick={() => {
+                        setCurrentPage.bind(null, link.href);
+                        window.scrollTo(0, 0);
+                      }}
+                      key={link.href}
+                      to={`/#${link.href}`}
+
+                    >
+                      {link.text}
+                    </Link>
+                  );
+                })}
               </div>
             </nav>
 

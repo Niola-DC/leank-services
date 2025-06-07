@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 
 const CallToAct = ({ title,title2, para, children}) => {
   return (
-    <div>
+    <div className='relative'>
        <div className="bg-gradient-to-br from-blue-900 via-indigo-900 to-purple-900 text-white py-16 px-8 sm:px-12 rounded-2xl">
           <div className="max-w-4xl mx-auto text-center lg:text-left lg:flex lg:items-center lg:justify-between">
             {/* Content */}
@@ -19,7 +19,7 @@ const CallToAct = ({ title,title2, para, children}) => {
             </div>
             
             {/* Buttons */}
-            <div className="flex flex-col sm:flex-row lg:flex-col xl:flex-row gap-4 lg:flex-shrink-0">
+            <div className="flex flex-col sm:flex-row lg:flex-col gap-4 lg:flex-shrink-0">
             
               {children}
             </div>

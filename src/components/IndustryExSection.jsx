@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 
 const IndustryExperienceSection = () => {
   return (
-    <section className="bg-white py-16 px-4 sm:px-6 lg:px-8">
+    <section className="bg-white py-16 px-8 sm:px-6 lg:px-8">
       <div className="max-w-5xl mx-auto">
         {/* Top Section - Industry Experience */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-24">
@@ -39,7 +39,7 @@ const IndustryExperienceSection = () => {
           <div className="order-1 lg:order-2">
             <div className="relative">
               <img
-                src="https://images.unsplash.com/photo-1554224155-6726b3ff858f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
+                src="/images/yard.jpg"
                 alt="Person working with logistics data and planning"
                 className="rounded-xl shadow-lg w-full h-80 sm:h-96 object-cover"
               />
@@ -54,10 +54,10 @@ const IndustryExperienceSection = () => {
         <CallToAct title="The fastest way for " title2="you to ship out" para="
                 Leanks is here to make shipping easier and more efficient for everyone">
           <button className="bg-blue-500 hover:bg-blue-600 text-white font-semibold px-8 py-3 rounded-lg transition-colors duration-200">
-            <Link to='/contact-form'>CONTACT US</Link>
+            <Link to='/contact'>CONTACT US</Link>
           </button>
           <button className="bg-transparent border-2 border-white hover:bg-white hover:text-blue-900 text-white font-semibold px-8 py-3 rounded-lg transition-colors duration-200">
-            <Link to='/services'>Learn More</Link>
+            <Link to='/#services'>Learn More</Link>
           
           </button>
         </CallToAct>

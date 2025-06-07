@@ -6,6 +6,8 @@ import './index.css'
 import LeanksHeader from './components/Top'
 import ContactPage from './pages/contact'
 import AboutPage from './pages/about'
+import TermsPage from './pages/termspage'
+import PrivacyPolicyPage from './pages/privacypolicy'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -20,6 +22,8 @@ function App() {
         { path: "/about", element: <AboutPage /> },
 
         { path: "/contact", element: <ContactPage /> },
+        { path: "/terms", element: <TermsPage /> },
+        { path: "/privacy-policy", element: <PrivacyPolicyPage /> },
 
 
         
