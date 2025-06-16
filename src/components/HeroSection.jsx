@@ -12,7 +12,7 @@ const HeroSection = () => {
         }}
       >
         {/* Dark overlay for better text readability */}
-        <div className="absolute inset-0 bg-gradient-to-b from-primary via-primary/90  to-indigo-900/80"></div>
+        <div className="absolute inset-0 bg-gradient-to-b from-primary via-primary/90 to-indigo-900/80"></div>
       </div>
 
       {/* Hero Content */}
@@ -40,55 +40,31 @@ const HeroSection = () => {
 
           {/* CTA Button */}
           <div className="mt-8 sm:mt-10">
-            <button className="inline-flex transform items-center rounded-full bg-gradient-to-r from-cyan-500 to-blue-500 px-8 py-4 text-lg font-semibold text-white shadow-lg transition-all duration-300 hover:scale-105 hover:from-cyan-600 hover:to-blue-600 hover:shadow-xl">
-              <Link to="/contact">GET A QUOTE</Link>
-            </button>
+            <Link
+              to="/contact"
+              className="inline-flex transform items-center rounded-full bg-gradient-to-r from-cyan-500 to-blue-500 px-8 py-4 text-lg font-semibold text-white shadow-lg transition-all duration-300 hover:scale-105 hover:from-cyan-600 hover:to-blue-600 hover:shadow-xl"
+            >
+              GET A QUOTE
+            </Link>
           </div>
 
-          {/* Optional: Stats or Features */}
-          <div className="mt-16 grid grid-cols-1 gap-8 sm:mt-20 sm:grid-cols-3 sm:gap-12">
+          {/* Stats or Features */}
+          <div className="mt-16 sm:mt-20 grid grid-cols-2 sm:grid-cols-4 gap-8 lg:gap-12 mb-4 lg:mb-1">
             <div className="text-center">
-              <div className="mb-2 text-3xl font-bold text-cyan-400 sm:text-4xl">
-                500+
-              </div>
-              <div className="text-sm text-gray-300 sm:text-base">
-                Deliveries Daily
-              </div>
-            </div>
-
-            <div className="text-center">
-              <div className="mb-2 text-3xl font-bold text-cyan-400 sm:text-4xl">
-                50+
-              </div>
-              <div className="text-sm text-gray-300 sm:text-base">
-                Countries Covered
-              </div>
+              <div className="text-3xl font-bold text-cyan-400 mb-2">42,000+ Tonnes</div>
+              <div className="text-gray-300 text-sm sm:text-base">Weight of Goods Moved</div>
             </div>
             <div className="text-center">
-              <div className="mb-2 text-3xl font-bold text-cyan-400 sm:text-4xl">
-                99%
-              </div>
-              <div className="text-sm text-gray-300 sm:text-base">
-                On-Time Delivery
-
-            {/* Optional: Stats or Features */}
-            <div className="mt-16 sm:mt-20 grid grid-cols-2 sm:grid-cols-4 gap-8 lg:gap-12 mb-4 lg:mb-1">
-               <div className="text-center">
-                <div className="text-3xl font-bold text-cyan-400 mb-2">42,000+ Tonnes </div>
-                <div className="text-gray-300 text-sm sm:text-base">Weight of Goods Moved</div>
-              </div>
-              <div className="text-center">
-                <div className="text-3xl font-bold text-cyan-400 mb-2">500+</div>
-                <div className="text-gray-300 text-sm sm:text-base">Deliveries Yearly (Marine Supply)</div>
-              </div>
-              <div className="text-center">
-                <div className="text-3xl font-bold text-cyan-400 mb-2">50+</div>
-                <div className="text-gray-300 text-sm sm:text-base">Businesses Services</div>
-              </div>
-              <div className="text-center">
-                <div className="text-3xl  font-bold text-cyan-400 mb-2">99%</div>
-                <div className="text-gray-300 text-sm sm:text-base">On-Time Delivery</div>
-              </div>
+              <div className="text-3xl font-bold text-cyan-400 mb-2">500+</div>
+              <div className="text-gray-300 text-sm sm:text-base">Deliveries Yearly (Marine Supply)</div>
+            </div>
+            <div className="text-center">
+              <div className="text-3xl font-bold text-cyan-400 mb-2">50+</div>
+              <div className="text-gray-300 text-sm sm:text-base">Businesses Services</div>
+            </div>
+            <div className="text-center">
+              <div className="text-3xl font-bold text-cyan-400 mb-2">99%</div>
+              <div className="text-gray-300 text-sm sm:text-base">On-Time Delivery</div>
             </div>
           </div>
         </div>
