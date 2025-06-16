@@ -16,8 +16,8 @@ const HeroSection = () => {
       </div>
 
       {/* Hero Content */}
-      <div className="relative mx-auto max-w-7xl px-4 text-center sm:px-6 lg:px-8">
-        <div className="mx-auto max-w-4xl">
+      <div className="relative mx-auto max-w-7xl px-4 text-center sm:px-6 lg:px-8 mt-20">
+        <div className="mx-auto max-w-4xl mt-20">
           {/* Main Heading */}
           <h1 className="mb-6 text-5xl leading-tight font-bold text-white md:text-6xl lg:text-7xl">
             Reliable{" "}
@@ -60,11 +60,11 @@ const HeroSection = () => {
             </div>
             <div className="text-center">
               <div className="text-3xl font-bold text-cyan-400 mb-2">50+</div>
-              <div className="text-gray-300 text-sm sm:text-base">Businesses Services</div>
+              <div className="text-gray-300 text-sm sm:text-base">Businesses Serviced</div>
             </div>
             <div className="text-center">
-              <div className="text-3xl font-bold text-cyan-400 mb-2">99%</div>
-              <div className="text-gray-300 text-sm sm:text-base">On-Time Delivery</div>
+              <div className="text-3xl font-bold text-cyan-400 mb-2">200+</div>
+              <div className="text-gray-300 text-sm sm:text-base">Registered Truck Assets</div>
             </div>
           </div>
         </div>

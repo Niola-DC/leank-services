@@ -23,6 +23,7 @@ function App() {
       children: [
         { index: true, element: <HomePage /> },
         { path: "/about", element: <AboutPage /> },
+        { path: "/home", element: <HomePage /> },
 
         { path: "/contact", element: <ContactPage /> },
         { path: "/terms", element: <TermsPage /> },

@@ -1,6 +1,8 @@
 import React from 'react';
 import CallToAct from './CallToAct';
 import { Link } from 'react-router-dom';
+import AnchorLink from 'react-anchor-link-smooth-scroll';
+import { feOffset } from 'framer-motion/m';
 
 const IndustryExperienceSection = () => {
   return (
@@ -22,16 +24,27 @@ const IndustryExperienceSection = () => {
               With years of experience in the logistics industry our team possess deep knowledge
               and insights into global trade regulations and market trends.
             </p>
-              <Link to='/contact'
-              onClick={() => {
+            {/* <button className="bg-blue-900 hover:bg-blue-800 text-white font-semibold px-8 py-3 rounded-lg transition-colors duration-200">
+
+              <AnchorLink href='/contact-form'
+                onClick={() => {
                   window.scrollTo(0, 0);
+                  feOffset
                 }}>
 
-            
+                CONTACT US
+              </AnchorLink>
+            </button> */}
             <button className="bg-blue-900 hover:bg-blue-800 text-white font-semibold px-8 py-3 rounded-lg transition-colors duration-200">
-              CONTACT US
+              <AnchorLink
+                href='#contact-form'
+                offset={100}
+                className="block w-full h-full text-inherit no-underline"
+              >
+                CONTACT US
+              </AnchorLink>
             </button>
-              </Link>
+
 
           </div>
 
@@ -53,13 +66,15 @@ const IndustryExperienceSection = () => {
                 Leanks is here to make shipping easier and more efficient for everyone" btn1="OUR SERVICES" btn2="ABOUT US" /> */}
         <CallToAct title="The fastest way for " title2="you to ship out" para="
                 Leanks is here to make shipping easier and more efficient for everyone">
-          <button className="bg-blue-500 hover:bg-blue-600 text-white font-semibold px-8 py-3 rounded-lg transition-colors duration-200">
-            <Link to='/contact'>CONTACT US</Link>
-          </button>
-          <button className="bg-transparent border-2 border-white hover:bg-white hover:text-blue-900 text-white font-semibold px-8 py-3 rounded-lg transition-colors duration-200">
-            <Link to='/#services'>Learn More</Link>
-          
-          </button>
+          <div className='flex-col'>
+            <button className="bg-blue-500 hover:bg-blue-600 text-white font-semibold mx-4 px-8 py-3 rounded-lg transition-colors duration-200">
+              <Link to='/contact'>CONTACT US</Link>
+            </button>
+            <button className="bg-transparent border-2 border-white hover:bg-white hover:text-blue-900 text-white font-semibold px-8 py-3 rounded-lg transition-colors duration-200">
+              <Link to='/#services'>Learn More</Link>
+
+            </button>
+          </div>
         </CallToAct>
       </div>
     </section>

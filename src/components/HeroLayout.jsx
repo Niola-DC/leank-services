@@ -5,7 +5,7 @@ const HeroLayout = ({ title, subtitle, children, backgroundImage }) => {
      <div className="relative flex items-center justify-center overflow-hidden pt-8 lg:pt-10 px-4">
         {/* Background Image with Overlay */}
         <div 
-          className="absolute inset-0 bg-cover bg-center bg-no-repeat h-[400px]"
+          className="absolute inset-0 bg-cover bg-center bg-no-repeat h-[420px]"
           style={{
             backgroundImage: `url('https://images.unsplash.com/photo-1494412651409-8963ce7935a7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80')`
             
@@ -18,7 +18,7 @@ const HeroLayout = ({ title, subtitle, children, backgroundImage }) => {
       
 
       {/* Hero Content */}
-      <div className="relative flex flex-col items-center min-h-screen px-2 sm:px-6 lg:px-8 pt-10">
+      <div className="relative flex flex-col items-center px-2 sm:px-6 lg:px-8 mt-26">
         <div className="text-center mb-2">
           <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold text-white mb-3">
             {title}
