@@ -55,6 +55,7 @@ const HeroSection = () => {
                 Deliveries Daily
               </div>
             </div>
+
             <div className="text-center">
               <div className="mb-2 text-3xl font-bold text-cyan-400 sm:text-4xl">
                 50+
@@ -69,6 +70,24 @@ const HeroSection = () => {
               </div>
               <div className="text-sm text-gray-300 sm:text-base">
                 On-Time Delivery
+
+            {/* Optional: Stats or Features */}
+            <div className="mt-16 sm:mt-20 grid grid-cols-2 sm:grid-cols-4 gap-8 lg:gap-12 mb-4 lg:mb-1">
+               <div className="text-center">
+                <div className="text-3xl font-bold text-cyan-400 mb-2">42,000+ Tonnes </div>
+                <div className="text-gray-300 text-sm sm:text-base">Weight of Goods Moved</div>
+              </div>
+              <div className="text-center">
+                <div className="text-3xl font-bold text-cyan-400 mb-2">500+</div>
+                <div className="text-gray-300 text-sm sm:text-base">Deliveries Yearly (Marine Supply)</div>
+              </div>
+              <div className="text-center">
+                <div className="text-3xl font-bold text-cyan-400 mb-2">50+</div>
+                <div className="text-gray-300 text-sm sm:text-base">Businesses Services</div>
+              </div>
+              <div className="text-center">
+                <div className="text-3xl  font-bold text-cyan-400 mb-2">99%</div>
+                <div className="text-gray-300 text-sm sm:text-base">On-Time Delivery</div>
               </div>
             </div>
           </div>

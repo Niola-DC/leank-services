@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 
 const WhyChooseUs = () => {
   const [activeTab, setActiveTab] = useState(0);
@@ -10,7 +11,7 @@ const WhyChooseUs = () => {
       subtitle: "Experience",
       // image: "/images/operators.png",
 
-      image: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+      image: "/images/trucker.jpg",
       content: "With years of experience in the logistics industry our team possess deep knowledge and insights into global trade regulations and market trends.",
       features: [
         "15+ Years of Industry Experience",
@@ -34,7 +35,7 @@ const WhyChooseUs = () => {
       id: 2,
       title: "Customer Centric Approach",
       subtitle: "Approach",
-      image: "https://images.unsplash.com/photo-1600880292203-757bb62b4baf?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+      image: "/images/cotruckers.jpg",
       content: "We prioritize your unique needs with personalized service, 24/7 support, and tailored logistics solutions that grow with your business.",
       features: [
         "24/7 Customer Support",
@@ -48,7 +49,7 @@ const WhyChooseUs = () => {
 
   return (
     <section className="relative py-16 sm:py-20 lg:py-24 bg-gray-50 overflow-hidden">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="max-w-7xl mx-auto px-12 lg:px-8">
         {/* Section Header */}
         <div className="text-center mb-12 sm:mb-16">
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 mb-8 sm:mb-12">
@@ -56,7 +57,7 @@ const WhyChooseUs = () => {
           </h2>
           
           {/* Tab Navigation */}
-          <div className="flex flex-col sm:flex-row items-center justify-center space-y-4 sm:space-y-0 sm:space-x-8 lg:space-x-16">
+          <div className="flex flex-row items-center justify-center space-y-4 space-x-14 sm:space-x-8 lg:space-x-16">
             {tabData.map((tab, index) => (
               <React.Fragment key={tab.id}>
                 <div 
@@ -173,7 +174,8 @@ const WhyChooseUs = () => {
               </div>
               
               <button className="inline-flex items-center px-8 py-3 bg-blue-900 text-white font-semibold rounded-full hover:bg-blue-800 transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl">
-                READ MORE
+               <Link to='/about'> READ MORE </Link>
+
               </button>
             </div>
           </div>

@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
@@ -12,11 +13,11 @@ const Footer = () => {
 
         <nav className="flex flex-wrap justify-center gap-6 md:gap-8 mb-8">
           <a href="#" className="text-gray-300 hover:text-white transition-colors">About us</a>
-          <a href="#" className="text-gray-300 hover:text-white transition-colors">Services</a>
-          <a href="#" className="text-gray-300 hover:text-white transition-colors">Contact</a>
-          <a href="#" className="text-gray-300 hover:text-white transition-colors">Terms & Condition</a>
-          <a href="#" className="text-gray-300 hover:text-white transition-colors">Help</a>
-          <a href="#" className="text-gray-300 hover:text-white transition-colors">Privacy</a>
+          <p className="text-gray-300 hover:text-white transition-colors"><Link to='/#services'>Services</Link></p>
+          <p className="text-gray-300 hover:text-white transition-colors"><Link to='/contact'>Contact</Link></p>
+          <p className="text-gray-300 hover:text-white transition-colors"><Link to='terms'>Terms & Condition</Link></p>
+          <p className="text-gray-300 hover:text-white transition-colors"><Link to='/contact'>Help</Link></p>
+          <p className="text-gray-300 hover:text-white transition-colors"><Link to='privacy-policy'>Privacy</Link></p>
         </nav>
 
         <div className="border-t border-slate-700 pt-6 text-center">

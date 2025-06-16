@@ -29,8 +29,15 @@ const CoreValues = () => {
             <p className="text-gray-600 mb-8">
               Every shipment we handle reflects our dedication to integrity, reliability, and continuous improvement in global logistics.
             </p>
+            <div className="relative px-4 mt-4 lg:hidden">
+              <div className="w-full h-100 flex items-center justify-center">
+                <div className="text-center text-white">
+                 <img src="/images/container.png" alt="Containers in Yard"/>
+                </div>
+              </div>
+          </div>
             
-            <div className="space-y-6">
+            <div className="space-y-6 mb-4">
               {values.map((value, index) => (
                 <div key={index} className="flex gap-4">
                   <div className="w-8 h-8 bg-slate-900 rounded flex items-center justify-center flex-shrink-0 mt-1">
@@ -50,17 +57,12 @@ const CoreValues = () => {
           </div>
           
           {/* Right Image */}
-          <div className="relative px-4 mt-4">
-            <div className="w-full h-96 bg-gradient-to-br from-slate-800 via-slate-700 to-slate-600 rounded-lg overflow-hidden">
-              <div className="w-full h-full bg-gradient-to-t from-slate-900/50 to-transparent flex items-center justify-center">
+          <div className="lg:flex relative px-4 mt-4 hidden">
+              <div className="w-full h-100 flex items-center justify-center">
                 <div className="text-center text-white">
-                  <div className="w-16 h-16 bg-orange-500 rounded-lg mx-auto mb-4 flex items-center justify-center">
-                    <span className="text-2xl font-bold">🏗️</span>
-                  </div>
-                  <p className="text-sm opacity-90">Port & Logistics Operations</p>
+                 <img src="/images/container.png" alt="Containers in Yard"/>
                 </div>
               </div>
-            </div>
           </div>
         </div>
       </div>

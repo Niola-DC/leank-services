@@ -1,4 +1,5 @@
 import { Facebook, Grid3X3, Instagram, Linkedin, Mail, Phone, Twitter } from "lucide-react";
+import MyMap from "./map";
 
 const ContactSection = () => {
   return (
@@ -49,10 +50,11 @@ const ContactSection = () => {
         </div>
         
         {/* Map */}
-        <div className="w-full h-80 bg-gray-300 rounded-lg overflow-hidden">
-          <div className="w-full h-full bg-gradient-to-br from-green-200 via-blue-200 to-orange-200 flex items-center justify-center">
-            <p className="text-gray-700 font-medium">Interactive Map Area</p>
-          </div>
+        <div className="w-full h-80 rounded-lg z-0 px-6">
+          {/* <div className="w-full h-full bg-gradient-to-br from-green-200 via-blue-200 to-orange-200 flex items-center justify-center"> */}
+            {/* <p className="text-gray-700 font-medium">Interactive Map Area</p> */}
+            <MyMap />
+          {/* </div> */}
         </div>
       </div>
     </section>
