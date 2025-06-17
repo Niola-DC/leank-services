@@ -12,12 +12,18 @@ const Footer = () => {
         </div>
 
         <nav className="flex flex-wrap justify-center gap-6 md:gap-8 mb-8">
-          <a href="#" className="text-gray-300 hover:text-white transition-colors">About us</a>
+          <p className="text-gray-300 hover:text-white transition-colors"><Link to='about' onClick={() => {
+            window.scrollTo(0, 0);
+          }}>About Us</Link></p>
           <p className="text-gray-300 hover:text-white transition-colors"><Link to='/#services'>Services</Link></p>
-          <p className="text-gray-300 hover:text-white transition-colors"><Link to='/contact'>Contact</Link></p>
-          <p className="text-gray-300 hover:text-white transition-colors"><Link to='terms'>Terms & Condition</Link></p>
-          <p className="text-gray-300 hover:text-white transition-colors"><Link to='/contact'>Help</Link></p>
-          <p className="text-gray-300 hover:text-white transition-colors"><Link to='privacy-policy'>Privacy</Link></p>
+          <p className="text-gray-300 hover:text-white transition-colors"><Link to='/#contact-form'>Contact</Link></p>
+          <p className="text-gray-300 hover:text-white transition-colors"><Link to='terms' onClick={() => {
+            window.scrollTo(0, 0);
+          }}>Terms & Condition</Link></p>
+          <p className="text-gray-300 hover:text-white transition-colors"><Link to='/#contact-form'>Help</Link></p>
+          <p className="text-gray-300 hover:text-white transition-colors"><Link to='privacy-policy' onClick={() => {
+            window.scrollTo(0, 0);
+          }}>Privacy</Link></p>
         </nav>
 
         <div className="border-t border-slate-700 pt-6 text-center">

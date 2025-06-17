@@ -25,7 +25,7 @@ const PrivacyPolicyPage = () => {
 
 
 
-      <div className="bg-white px-8 rounded-lg shadow-md max-w-4xl mx-auto">
+      <div className="bg-white px-8 rounded-lg shadow-md max-w-4xl mx-auto mt-8">
         <p className="mb-4 text-lg text-gray-600 max-w-3xl mx-auto">
           Your privacy is top-most priority to us at Leanks Services. We respect your privacy regarding any information we may collect from you across our website.
         </p>

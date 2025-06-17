@@ -41,7 +41,7 @@ const HeroSection = () => {
           {/* CTA Button */}
           <div className="mt-8 sm:mt-10">
             <Link
-              to="/contact"
+              to="contact"
               className="inline-flex transform items-center rounded-full bg-gradient-to-r from-cyan-500 to-blue-500 px-6 py-3 text-lg font-semibold text-white shadow-lg transition-all duration-300 hover:scale-105 hover:from-cyan-600 hover:to-blue-600 hover:shadow-xl"
             >
               GET A QUOTE

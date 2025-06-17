@@ -26,7 +26,7 @@ const TermsPage = () => {
 
 
 
-            <div className="bg-white p-8 rounded-lg shadow-md max-w-5xl mx-auto">
+            <div className="bg-white p-8 rounded-lg shadow-md max-w-5xl mx-auto mt-8">
                          <p className="mb-4 text-left sm:text-lg text-gray-800 max-w-3xl mx-auto leading-relaxed sm:mx-10">
                     These Terms and Conditions  govern your use of the services provided by Leanks Innovation Services including freight forwarding, logistics management, and marine supply services.
 
