@@ -137,7 +137,7 @@ export default function Header() {
   useEffect(() => {
     function handleScroll() {
       const currentScrollY = window.scrollY;
-      
+
       // Show header when scrolling up, hide when scrolling down
       if (currentScrollY < lastScrollY || currentScrollY < 100) {
         setIsVisible(true);
@@ -203,7 +203,7 @@ export default function Header() {
                 })}
               </nav>
             </div>
-            
+
             <nav className="-mt-[.99px] flex justify-center space-x-2">
               {nav_links.map((link, idx) => {
                 const notFirst = idx > 0;
@@ -215,7 +215,9 @@ export default function Header() {
                     <Link
                       to={`${link.href}`}
                       className="border-t-2 border-transparent p-4 hover:border-sky-500 hover:bg-sky-500/30 hover:text-sky-500 transition-colors duration-200"
-                    >
+                      onClick={() => {
+                        window.scrollTo(0, 0);
+                      }}>
                       {link.text}
                     </Link>
                   </Fragment>
@@ -289,7 +291,11 @@ export default function Header() {
                       key={`mobile-${link.href}`}
                       to={`${link.href}`}
                       className="block py-3 px-2 text-gray-200 hover:text-sky-500 hover:bg-sky-500/10 rounded-md transition-colors duration-200"
-                      onClick={() => setIsMobileMenuOpen(false)}
+                      onClick={() => {
+                        setIsMobileMenuOpen(false);
+                        window.scrollTo(0, 0);
+
+                      }}
                     >
                       {link.text}
                     </Link>

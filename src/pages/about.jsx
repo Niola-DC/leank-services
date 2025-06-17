@@ -9,7 +9,7 @@ const AboutPage = () => {
         title="About Us"
         subtitle="Redefining Logistics & Supply Chain Globally."
       >
-        <div className="bg-white bg-opacity-95 backdrop-blur-sm rounded-2xl shadow-2xl overflow-hidden max-w-3xl mb-4 mt-2">
+        <div className="bg-white bg-opacity-95 backdrop-blur-sm rounded-2xl shadow-sm overflow-hidden max-w-3xl mb-4 mt-2">
           <div className="p-3 md:p-12">
             <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center">
               <div className="relative">

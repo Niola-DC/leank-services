@@ -17,7 +17,7 @@ const CoreValues = () => {
   ];
 
   return (
-    <section className="py-8 mt-2 bg-white">
+    <section className="py-8 mt-2">
       <div className="container mx-auto px-4 max-w-6xl">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Left Content */}
@@ -58,9 +58,11 @@ const CoreValues = () => {
           
           {/* Right Image */}
           <div className="lg:flex relative px-4 mt-4 hidden">
-              <div className="w-full h-100 flex items-center justify-center">
+              <div className="h-30 flex items-center justify-center">
                 <div className="text-center text-white">
-                 <img src="/images/container.png" alt="Containers in Yard"/>
+                 <img src="/images/container.png" alt="Containers in Yard"
+                  className="h-full w-full object-contain"
+                 />
                 </div>
               </div>
           </div>
