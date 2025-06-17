@@ -22,8 +22,8 @@ const ContactPage = () => {
             </div>
           </div>
         </div> */}
-        <div className="overflow-hidden max-w-3xl mt-2 mb-14 h-[300px]">
-          <div className="p-3 md:p-12">
+        <div className="overflow-hidden max-w-3xl mb-14 h-[300px]">
+          <div className="p-3 pt-0 md:p-12">
          <div className="absolute left-1/2 transform -translate-x-1/2  px-4 lg:px-8">
 
             {/* <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center"> */}

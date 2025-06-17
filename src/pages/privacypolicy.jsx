@@ -12,7 +12,7 @@ const PrivacyPolicyPage = () => {
   return (
     <section className="w-full max-w-7xl relative">
        <PageLayout >
-                <div className='h-[400px]'>
+                <div className='h-[400px] mt-20'>
                        <h1 className='text-5xl text-center font-semibold text-white mb-4'>Privacy Policy</h1>
 
                

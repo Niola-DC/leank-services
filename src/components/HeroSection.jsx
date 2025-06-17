@@ -19,7 +19,7 @@ const HeroSection = () => {
       <div className="relative mx-auto max-w-7xl px-4 text-center sm:px-6 lg:px-8 mt-20">
         <div className="mx-auto max-w-4xl mt-20">
           {/* Main Heading */}
-          <h1 className="mb-6 text-5xl leading-tight font-bold text-white md:text-6xl lg:text-7xl">
+          <h1 className="mb-6 text-6xl leading-tight font-bold text-white ">
             Reliable{" "}
             <span className="block bg-gradient-to-r from-cyan-400 to-blue-400 bg-clip-text text-transparent sm:inline">
               Shipping
@@ -28,31 +28,31 @@ const HeroSection = () => {
 
           {/* Subheading */}
           <div className="mb-4 text-lg leading-relaxed text-gray-200 sm:text-xl md:text-2xl">
-            <p className="mb-2">
+            <p className="mb-2 text-lg">
               At{" "}
               <span className="font-semibold text-cyan-400">
                 Leanks Innovation Services
               </span>
               , we deliver more than just packages.
             </p>
-            <p>We deliver trust, speed, and security across borders</p>
+            <p className="text-lg">We deliver trust, speed, and security across borders</p>
           </div>
 
           {/* CTA Button */}
           <div className="mt-8 sm:mt-10">
             <Link
               to="/contact"
-              className="inline-flex transform items-center rounded-full bg-gradient-to-r from-cyan-500 to-blue-500 px-8 py-4 text-lg font-semibold text-white shadow-lg transition-all duration-300 hover:scale-105 hover:from-cyan-600 hover:to-blue-600 hover:shadow-xl"
+              className="inline-flex transform items-center rounded-full bg-gradient-to-r from-cyan-500 to-blue-500 px-6 py-3 text-lg font-semibold text-white shadow-lg transition-all duration-300 hover:scale-105 hover:from-cyan-600 hover:to-blue-600 hover:shadow-xl"
             >
               GET A QUOTE
             </Link>
           </div>
 
           {/* Stats or Features */}
-          <div className="mt-16 sm:mt-20 grid grid-cols-2 sm:grid-cols-4 gap-8 lg:gap-12 mb-4 lg:mb-1">
+          <div className="mt-16 sm:mt-20 grid grid-cols-2 sm:grid-cols-4 gap-8 lg:gap-14 mb-4">
             <div className="text-center">
-              <div className="text-3xl font-bold text-cyan-400 mb-2">42,000+ Tonnes</div>
-              <div className="text-gray-300 text-sm sm:text-base">Weight of Goods Moved</div>
+              <div className="text-3xl font-bold text-cyan-400 mb-2">42,000+ </div>
+              <div className="text-gray-300 text-sm sm:text-base">Tonnes of Goods Moved</div>
             </div>
             <div className="text-center">
               <div className="text-3xl font-bold text-cyan-400 mb-2">500+</div>
